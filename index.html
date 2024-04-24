@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dream Homes</title>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        .header, .footer { background-color: #f0f0f0; text-align: center; padding: 1rem; }
+        .nav { padding: 0; margin: 0; list-style-type: none; overflow: hidden; background-color: #333; }
+        .nav li { float: left; }
+        .nav li a { display: block; color: white; text-align: center; padding: 14px 16px; text-decoration: none; }
+        .nav li a:hover { background-color: #111; }
+        .main { padding: 0px 10px; }
+        .property-list { display: flex; flex-wrap: wrap; justify-content: space-between; }
+        .property { border: 1px solid #ddd; margin: 10px; padding: 10px; width: calc(33% - 20px); }
+        .property img { max-width: 100%; height: auto; }
+        .login { float: right; padding: 14px 16px; background-color: #007BFF; color: white; } /* Updated colors for better contrast */
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <h1>Dream Homes</h1>
+    <ul class="nav">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#buy">Buy</a></li>
+        <li><a href="#rent">Rent</a></li>
+        <li><a href="#sell">Sell</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#login" class="login">Login/Register</a></li>
+    </ul>
+</div>
+
+<div class="main">
+    <h2>Featured Properties</h2>
+    <div class="property-list">
+        <!-- Example Property -->
+        <div class="property">
+            <img src="example-property.jpg" alt="Example Property">
+            <h3>Property Title</h3>
+            <p>Property address, price, and brief description.</p>
+            <button>Inquire</button>
+        </div>
+        <!-- Repeat for more properties -->
+    </div>
+</div>
+
+<div class="footer">
+    <form>
+        <label for="email" style="display: none;">Email Address</label> <!-- Added a label for accessibility -->
+        <input type="email" id="email" placeholder="Your email address">
+        <button type="submit">Subscribe</button>
+    </form>
+    <p>© 2023 Dream Homes. All rights reserved.</p>
+</div>
+
+</body>
+</html>
